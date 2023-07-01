@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="206.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.giocoAuto.GameOverWindow">
+    <children>
+        <Pane layoutY="3.0" prefHeight="200.0" prefWidth="420.0" style="-fx-border-color: black; -fx-background-color: black;">
+            <children>
+                <Text fill="#cd1414" layoutX="80.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GAME OVER">
+                    <font>
+                        <Font name="Bodoni MT" size="40.0" />
+                    </font>
+                </Text>
+                <Button fx:id="MenuReturn" layoutX="141.0" layoutY="88.0" mnemonicParsing="false" onAction="#handlereturnMenu" style="-fx-background-color: yellow;" text="Torna al menu">
+                    <font>
+                        <Font name="Bodoni MT" size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

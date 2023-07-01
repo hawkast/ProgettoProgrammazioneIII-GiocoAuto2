@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="467.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.giocoAuto.MenuStart">
+    <children>
+        <ImageView fitHeight="519.0" fitWidth="800.0" layoutX="2.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/sfondoMenu.jpg" />
+            </image>
+        </ImageView>
+        <VBox alignment="CENTER" layoutX="246.0" layoutY="42.0" prefHeight="361.0" prefWidth="312.0" spacing="20" style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: pink;">
+            <children>
+                <Label text="BENVENUTI NEL GIOCO">
+                    <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                    </font>
+                </Label>
+                <VBox prefHeight="268.0" prefWidth="306.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-width: 3; -fx-padding: 5;">
+                    <children>
+                        <HBox prefHeight="64.0" prefWidth="170.0" style="-fx-border-color: black; -fx-border-width: 3; -fx-padding: 9;">
+                     <children>
+                                <Button fx:id="startButton" onAction="#handleStartButtonAction" prefHeight="40.0" prefWidth="560.0" style="-fx-background-color: #32CD32; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-label-padding: 5;" text="Start" />
+                     </children>
+                        </HBox>
+                  <HBox prefHeight="64.0" prefWidth="170.0" style="-fx-border-color: black; -fx-border-width: 3; -fx-padding: 9;">
+                     <children>
+                                <Button fx:id="loginButton" disable="false" onAction="#handeLoginButton" prefHeight="51.0" prefWidth="266.0" style="-fx-background-color: #32CD32; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-label-padding: 5;" text="LOG IN" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="64.0" prefWidth="170.0" style="-fx-border-color: black; -fx-border-width: 3; -fx-padding: 9;">
+                     <children>
+                        <Button fx:id="sign" onAction="#handSignButton" prefHeight="49.0" prefWidth="266.0" style="-fx-background-color: #32CD32; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-label-padding: 5;" text="SIGN IN" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="messageLabel" text="BENVENUTO!" />
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+        <Pane layoutX="36.0" layoutY="9.0" />
+    </children>
+</AnchorPane>

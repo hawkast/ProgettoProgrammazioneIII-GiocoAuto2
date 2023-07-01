@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<Pane prefHeight="689.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.giocoAuto.ControllerPartita">
+   <children>
+      <ImageView fitHeight="689.0" fitWidth="691.0" layoutX="4.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/sfondoMenu.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <ImageView fx:id="cars" fitHeight="58.0" fitWidth="83.0" layoutX="309.0" layoutY="631.0" />
+      <Pane layoutX="20.0" layoutY="63.0" prefHeight="72.0" prefWidth="607.0">
+         <children>
+            <Label fx:id="errorLab" layoutX="12.0" layoutY="50.0" style="-fx-background-color: pink;">
+               <font>
+                  <Font name="Bodoni MT" size="15.0" />
+               </font>
+            </Label>
+
+             <Button fx:id="btnSaveGame" layoutX="187.0" layoutY="11.0" style="-fx-background-color: yellow;" text="SalvaPartita" textFill="#140a03">
+
+                                                   <font>
+                  <Font name="Bodoni MT" size="15.0" />
+               </font>
+            </Button>
+             <Button fx:id="btnLoadGame" layoutX="304.0" layoutY="10.0" style="-fx-background-color: yellow;" text="CaricaPartita" textFill="#060704">
+               <font>
+                  <Font name="Bodoni MT" size="15.0" />
+               </font></Button>
+      
+            <ToggleButton fx:id="startToggleButton" layoutX="31.0" layoutY="12.0" onAction="#StartGame" style="-fx-background-color: yellow;" text="Start">
+               <font>
+                  <Font name="Bodoni MT" size="15.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="PauseToggleButton" layoutX="109.0" layoutY="12.0" onAction="#pauseGame" style="-fx-background-color: yellow;" text="Pausa">
+               <font>
+                  <Font name="Bodoni MT" size="15.0" />
+               </font>
+            </ToggleButton>
+         </children>
+      </Pane>
+      <Pane layoutX="20.0" layoutY="551.0" prefHeight="60.0" prefWidth="660.0" />
+
+      <GridPane fx:id="grid" alignment="CENTER" gridLinesVisible="true" layoutX="20.0" layoutY="141.0" style="-fx-background-color: white;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="65.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="65.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="65.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="65.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="65.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="65.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <VBox layoutX="524.0" layoutY="141.0" prefHeight="390.0" prefWidth="142.0" style="-fx-border-color: black; -fx-background-color: yellow;">
+         <children>
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="81.0" prefWidth="138.0" style="-fx-background-color: yellow;">
+                     <children>
+                        <Label fx:id="lifepointsLab" layoutY="4.0" style="-fx-text-alignment: center;" text="Vite disponibili :" textFill="#31901d">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: yellow;">
+                     <children>
+                        <Label fx:id="countLabel" style="-fx-text-alignment: center;" text="Oggetti Raccolti:" textFill="#31901d">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </VBox>
+      <Text fill="#ff000d" layoutX="247.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GIOCO D'AUTO" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT" size="29.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

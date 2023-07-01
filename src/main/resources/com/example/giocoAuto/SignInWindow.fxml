@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="387.0" prefWidth="300.0" style="-fx-background-color: url('images/sfondoMenu.jpg');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.giocoAuto.SignInWindow">
+    <children>
+        <AnchorPane layoutX="95.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+            <children>
+                <Pane layoutX="-92.0" layoutY="-3.0" prefHeight="365.0" prefWidth="295.0" style="-fx-border-color: black; -fx-background-color: yellow;">
+                    <children>
+                        <SplitPane layoutX="2.0" layoutY="50.0" orientation="VERTICAL" prefHeight="253.0" prefWidth="289.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="251.0" prefWidth="296.0">
+                                    <children>
+                                        <TextField fx:id="firstNameFieldR" layoutY="51.0" />
+                                        <Text layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: bodoni mt;" text="NOME" />
+                                        <TextField fx:id="lastNameFieldR" layoutY="113.0" />
+                                        <Text layoutX="14.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COGNOME" />
+                                        <Label fx:id="messageLabel" layoutX="14.0" layoutY="216.0" />
+                              <Label fx:id="messageLabR" layoutX="14.0" layoutY="216.0" />
+                              <Button fx:id="signInButton" layoutX="111.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleSignInButtonAction" text="Sign in" />
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                        <Text layoutX="26.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN IN">
+                            <font>
+                                <Font name="Bodoni MT" size="32.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
