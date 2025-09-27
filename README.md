@@ -1,6 +1,6 @@
 # ProgettoProgrammazioneIII-GiocoAuto2
 
-## Sviluppato da Lorenzo Guerrini e Pasquale Marzocchi
+## Sviluppato da Lorenzo Guerrini
 
 
 ## Descrizione del Progetto
